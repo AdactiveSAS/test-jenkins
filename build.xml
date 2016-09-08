@@ -116,8 +116,6 @@
     <exec executable="phpunit" failonerror="true">
       <arg value="-c" />
       <arg path="${basedir}/app/phpunit.xml" />
-      <arg line="--coverage-clover ${basedir}/app/build/logs/clover.xml --coverage-html ${basedir}/app/build/logs/."/>
-    </exec>
   </target>
 
   <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
