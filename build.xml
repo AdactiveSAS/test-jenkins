@@ -118,6 +118,8 @@
       <arg path="${basedir}/app/phpunit.xml" />
       <arg value="--coverage-clover"/>
       <arg path="${basedir}/app/build/logs/clover.xml"/>
+      <arg value="--coverage-html"/>
+      <arg path="${basedir}/app/build/logs/."/>
     </exec>
   </target>
 
