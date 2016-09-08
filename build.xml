@@ -116,6 +116,8 @@
     <exec executable="phpunit" failonerror="true">
       <arg value="-c" />
       <arg path="${basedir}/app/phpunit.xml" />
+      <arg value="--coverage-clover"/>
+      <arg path="${basedir}/app/build/logs/clover.xml"/>
     </exec>
   </target>
 
