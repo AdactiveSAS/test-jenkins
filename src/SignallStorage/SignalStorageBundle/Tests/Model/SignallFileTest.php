@@ -17,7 +17,7 @@ class SignallFileTest extends \PHPUnit_Framework_TestCase
         $size = 524524230;
         $key = "some key";
 
-        $this->SignallFile = new SignallFile($contentHash, $mimeType, $size, $key);;
+        $this->SignallFile = new SignallFile($contentHash, $mimeType, $size, $key);
     }
     public function testConstructor()
     {
