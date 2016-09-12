@@ -12,7 +12,9 @@
         ]
     },
    "autoload-dev": {
-	"Signall\\StorageBundle\\Tests":"src/*/*Bundle/Tests"
+	"psr-4": {
+		"Signall\\StorageBundle":"src/*/*Bundle/Tests"
+	}
 	},
     "require": {
         "php": ">=5.3.9",
