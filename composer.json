@@ -4,14 +4,16 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "": "src/",
-	    "": "src/*/*Bundle/Model"
+            "": "src/"
         },
         "classmap": [
             "app/AppKernel.php",
             "app/AppCache.php"
         ]
     },
+   "autoload-dev": {
+	"Signall\\StorageBundle\\Tests":"src/*/*Bundle/Tests"
+	},
     "require": {
         "php": ">=5.3.9",
         "symfony/symfony": "2.8.*",
