@@ -1,0 +1,55 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @Antho83
+
+34
+651
+
+    300
+
+sebastianbergmann/money
+Code
+Pull requests 0
+Projects 0
+Pulse
+Graphs
+money/build/phpdox.xml
+71dd44b on 17 Apr
+@sebastianbergmann sebastianbergmann Update build
+26 lines (22 sloc) 624 Bytes
+<?xml version="1.0" encoding="utf-8" ?>
+<phpdox xmlns="http://xml.phpdox.net/config">
+ <project name="Money" source="../src" workdir="phpdox">
+  <collector publiconly="false">
+   <include mask="*.php" />
+   <exclude mask="*autoload.php" />
+  </collector>
+
+  <generator output=".">
+   <enrich base="logs">
+    <source type="build" />
+    <source type="git" />
+    <source type="phploc" />
+    <source type="checkstyle" />
+    <source type="pmd" />
+    <source type="phpunit" />
+   </enrich>
+
+   <build engine="html" enabled="true" output="api">
+    <file extension="html" />
+   </build>
+  </generator>
+ </project>
+</phpdox>
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2016 GitHub, Inc. Terms Privacy Security Status Help 
+
+
