@@ -1,28 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @Antho83
-
-34
-651
-
-    300
-
-sebastianbergmann/money
-Code
-Pull requests 0
-Projects 0
-Pulse
-Graphs
-money/build/phpdox.xml
-71dd44b on 17 Apr
-@sebastianbergmann sebastianbergmann Update build
-26 lines (22 sloc) 624 Bytes
 <?xml version="1.0" encoding="utf-8" ?>
 <phpdox xmlns="http://xml.phpdox.net/config">
  <project name="Money" source="../src" workdir="phpdox">
@@ -47,9 +22,3 @@ money/build/phpdox.xml
   </generator>
  </project>
 </phpdox>
-
-    Contact GitHub API Training Shop Blog About 
-
-    © 2016 GitHub, Inc. Terms Privacy Security Status Help 
-
-
