@@ -34,7 +34,7 @@
                 <modified/>
             </fileset>
 
-            <fileset dir="${basedir}/tests">
+            <fileset dir="${basedir}/Tests">
                 <include name="**/*.php"/>
                 <modified/>
             </fileset>
@@ -45,7 +45,7 @@
         <exec executable="${basedir}/build/tools/phploc.phar" taskname="phploc">
             <arg value="--count-tests"/>
             <arg path="${basedir}/src"/>
-            <arg path="${basedir}/tests"/>
+            <arg path="${basedir}/Tests"/>
         </exec>
     </target>
 
@@ -58,7 +58,7 @@
             <arg value="--log-xml"/>
             <arg path="${basedir}/build/logs/phploc.xml"/>
             <arg path="${basedir}/src"/>
-            <arg path="${basedir}/tests"/>
+            <arg path="${basedir}/Tests"/>
         </exec>
     </target>
 
@@ -97,7 +97,7 @@
             <arg value="--extensions=php"/>
             <arg value="--ignore=autoload.php"/>
             <arg path="${basedir}/src"/>
-            <arg path="${basedir}/tests"/>
+            <arg path="${basedir}/Tests"/>
         </exec>
     </target>
 
