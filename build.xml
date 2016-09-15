@@ -18,7 +18,7 @@
         <property name="prepare.done" value="true"/>
     </target>
 
-    <target name="lint" depends="generate-code">
+    <target name="lint">
         <apply executable="php" failonerror="true" taskname="lint">
             <arg value="-l"/>
 
