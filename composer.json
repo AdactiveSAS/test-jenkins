@@ -1,0 +1,45 @@
+{
+  "name": "adactive-sas/signall-storage-bundle",
+  "type": "symfony-bundle",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "bilouwan",
+      "email": "moroine.bentefrit@adactive.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0.0",
+    "adactive-sas/signall-data-bundle": "dev-develop",
+    "knplabs/knp-gaufrette-bundle": "~0.3"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.6.1",
+    "phpmd/phpmd": "^2.4.3",
+    "phpunit/phpunit": "^5.4.0",
+    "symfony/phpunit-bridge": "^2.8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Signall\\StorageBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/AdactiveSAS/signall-data-bundle.git"
+    }
+  ],
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}
