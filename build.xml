@@ -18,10 +18,10 @@
         <property name="prepare.done" value="true"/>
     </target>
 
-	<target name="vendors" description="Update vendors">
+	<target name="composer install" description="Update vendors">
 	    <exec executable="php" failonerror="true">
 			<arg value="composer.phar" />
-			<arg value="update" />
+			<arg value="install" />
 	    </exec>
 	</target>
 
