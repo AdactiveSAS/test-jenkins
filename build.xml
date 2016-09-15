@@ -18,6 +18,13 @@
         <property name="prepare.done" value="true"/>
     </target>
 
+	<target name="vendors" description="Update vendors">
+	    <exec executable="php" failonerror="true">
+			<arg value="composer.phar" />
+			<arg value="update" />
+	    </exec>
+	</target>
+
     <target name="lint">
         <apply executable="php" failonerror="true" taskname="lint">
             <arg value="-l"/>
